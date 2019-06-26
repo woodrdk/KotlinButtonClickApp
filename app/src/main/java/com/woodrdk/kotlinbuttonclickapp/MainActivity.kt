@@ -13,6 +13,7 @@ import android.widget.TextView
 
 private const val TAG = "MainActivity"
 private const val TEXT_CONTENTS = "TextContent"
+
 class MainActivity : AppCompatActivity() {
     private var textView: TextView? = null
 
@@ -27,8 +28,8 @@ class MainActivity : AppCompatActivity() {
         textView?.text = ""
         textView?.movementMethod = ScrollingMovementMethod()
         userInput.setText("")
-        button.setOnClickListener(object : View.OnClickListener{
-            override fun onClick(p0: View?){
+        button.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(p0: View?) {
                 textView?.append(userInput.text)
                 textView?.append("\n")
                 //userInput.text.clear()
